@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/sourceItem"
+    android:padding="10dp"
+    android:background="@drawable/item_selector">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1337"
+        android:id="@+id/typeTV"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:inputType="none" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollHorizontally="false"
+        android:text="Hier könnte Ihre Werbung stehen!"
+        android:id="@+id/urlTV"
+        android:textColor="#ffffff"
+        android:textSize="12dp"
+        android:inputType="none"
+        android:breakStrategy="simple" />
+</LinearLayout>

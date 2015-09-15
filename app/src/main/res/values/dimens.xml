@@ -1,0 +1,124 @@
+<resources>
+
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">0px</dimen>
+  <dimen name="activity_vertical_margin">0px</dimen>
+  <dimen name="login_llt_content_width">300dp</dimen>
+
+  <!-- general sizes -->
+  <dimen name="large_font_size">15dp</dimen>
+
+  <!-- player overlay dimensions -->
+  <dimen name="player_rlt_overlay_content_height">50dp</dimen>
+  <!-- player control-wrapper dimensions -->
+  <!-- control-wrapper > play/pause button -->
+  <dimen name="player_iv_control_play_pause_width">35dp</dimen>
+  <dimen name="player_iv_control_play_pause_height">35dp</dimen>
+  <dimen name="player_iv_control_play_pause_margin_left">5dp</dimen>
+  <dimen name="player_iv_control_play_pause_margin_right">5dp</dimen>
+  <dimen name="player_iv_control_play_pause_padding">5dp</dimen>
+  <!-- control-wrapper > progress bar -->
+  <dimen name="player_pb_control_progress_height">10dp</dimen>
+  <dimen name="player_pb_control_progress_margin_left">55dp</dimen>
+  <dimen name="player_pb_control_progress_margin_right">245dp</dimen>
+  <!-- control-wrapper > seek bar -->
+  <dimen name="player_sb_control_seek_height">40dp</dimen>
+  <dimen name="player_sb_control_seek_margin_left">55dp</dimen>
+  <dimen name="player_sb_control_seek_margin_top">5dp</dimen>
+  <dimen name="player_sb_control_seek_margin_right">245dp</dimen>
+  <dimen name="player_sb_control_seek_margin_bottom">5dp</dimen>
+  <!-- control-wrapper > current playback time and total duration -->
+  <dimen name="player_tv_control_playback_time_width">150dp</dimen>
+  <dimen name="player_tv_control_playback_time_height">25dp</dimen>
+  <dimen name="player_tv_control_playback_margin_top">12dp</dimen>
+  <dimen name="player_tv_control_playback_margin_right">75dp</dimen>
+  <!-- control wrapper > change scaling button -->
+  <dimen name="player_iv_control_change_scaling_width">55dp</dimen>
+  <dimen name="player_iv_control_change_scaling_height">35dp</dimen>
+  <dimen name="player_iv_control_change_scaling_margin_right">5dp</dimen>
+  <dimen name="player_iv_control_change_scaling_padding">5dp</dimen>
+
+  <!-- tooltip dimensions -->
+  <dimen name="player_tv_tooltip_text_margin">2dp</dimen>
+
+  <!-- dimensions for the sidebar -->
+  <dimen name="player_llt_sidebar_wrapper_width">350dp</dimen>
+  <dimen name="player_llt_sidebar_wrapper_margin_left">0dp</dimen>
+  <!-- sidebar-wrapper > content -->
+  <dimen name="player_rlt_sidebar_width">300dp</dimen>
+  <!-- sidebar-wrapper > content > header -->
+  <dimen name="player_llt_sidebar_header_wrapper_height">50dp</dimen>
+  <!-- sidebar-wrapper > content > header > container -->
+  <dimen name="player_llt_sidebar_header_container_width">200dp</dimen>
+  <!-- sidebar wrapper > content > header > container > image buttons -->
+  <dimen name="player_ib_pager_width">40dp</dimen>
+  <dimen name="player_ib_pager_height">40dp</dimen>
+  <dimen name="player_ib_pager_margin_top">5dp</dimen>
+  <dimen name="player_ib_pager_margin_bottom">5dp</dimen>
+  <dimen name="player_ib_pager_padding">7dp</dimen>
+  <!-- sidebar wrapper > content > header > container > container -->
+  <dimen name="player_llt_pager_container_width">140dp</dimen>
+  <dimen name="player_llt_pager_container_height">40dp</dimen>
+  <!-- sidebar wrapper > content > header > container > container > current and total page numbers-->
+  <dimen name="player_pager_current_total_width">70dp</dimen>
+  <dimen name="player_pager_current_total_height">40dp</dimen>
+  <!-- sidebar wrapper > content > header > settings button -->
+  <dimen name="player_ib_settings_width">45dp</dimen>
+  <dimen name="player_ib_settings_height">45dp</dimen>
+  <dimen name="player_ib_settings_margin">2.5dp</dimen>
+  <!-- sidebar-wrapper > content -->
+  <dimen name="player_llt_sidebar_content">290dp</dimen>
+  <dimen name="player_llt_sidebar_margin_left">10dp</dimen>
+  <dimen name="player_llt_sidebar_margin_top">50dp</dimen>
+  <dimen name="player_llt_sidebar_margin_right">10dp</dimen>
+  <!-- sidebar-wrapper > content > loading view -->
+  <dimen name="player_pb_sidebar_loading_progress_width">70dp</dimen>
+  <dimen name="player_pb_sidebar_loading_progress_height">70dp</dimen>
+  <dimen name="player_pb_sidebar_loading_progress_margin_top">10dp</dimen>
+  <!-- sidebar-wrapper > content > settings view -->
+  <dimen name="player_tv_widevine_uri_margin_top">10dp</dimen>
+  <!-- sidebar-wrapper > handle -->
+  <dimen name="player_llt_sidebar_handle_width">50dp</dimen>
+  <!-- sidebar-wrapper > handle > wrapper -->
+  <dimen name="player_rlt_show_sidebar_width">50dp</dimen>
+  <dimen name="player_rlt_show_sidebar_height">133dp</dimen>
+  <!-- sidebar-wrapper > handle > wrapper > collapse/expand sidebar imageView -->
+  <dimen name="player_iv_show_sidebar_width">20dp</dimen>
+  <dimen name="player_iv_show_sidebar_height">20dp</dimen>
+
+  <!-- dimensions for the bitcodin logo  -->
+  <dimen name="player_iv_bitcodin_logo_width">125dp</dimen>
+  <dimen name="player_iv_bitcodin_logo_height">37.5dp</dimen>
+  <dimen name="player_iv_bitcodin_logo_margin_top">6.25dp</dimen>
+  <dimen name="player_iv_bitcodin_logo_margin_right">6.25dp</dimen>
+
+  <!-- dimensions for the buffering overlay -->
+  <dimen name="player_rlt_buffering_overlay_wrapper_width">100dp</dimen>
+  <dimen name="player_rlt_buffering_overlay_wrapper_height">100dp</dimen>
+  <dimen name="player_rlt_buffering_dot_size">25dp</dimen>
+  <!-- buffering dot 1 margins -->
+  <dimen name="player_rlt_buffering_dot_1_margin_left">0dp</dimen>
+  <dimen name="player_rlt_buffering_dot_1_margin_top">37.5dp</dimen>
+  <!-- buffering dot 2 margins -->
+  <dimen name="player_rlt_buffering_dot_2_margin_left">12dp</dimen>
+  <dimen name="player_rlt_buffering_dot_2_margin_top">12dp</dimen>
+  <!-- buffering dot 3 margins -->
+  <dimen name="player_rlt_buffering_dot_3_margin_left">37.5dp</dimen>
+  <dimen name="player_rlt_buffering_dot_3_margin_top">0dp</dimen>
+  <!-- buffering dot 4 margins -->
+  <dimen name="player_rlt_buffering_dot_4_margin_left">63dp</dimen>
+  <dimen name="player_rlt_buffering_dot_4_margin_top">12dp</dimen>
+  <!-- buffering dot 5 margins -->
+  <dimen name="player_rlt_buffering_dot_5_margin_left">75dp</dimen>
+  <dimen name="player_rlt_buffering_dot_5_margin_top">37.5dp</dimen>
+  <!-- buffering dot 6 margins -->
+  <dimen name="player_rlt_buffering_dot_6_margin_left">63dp</dimen>
+  <dimen name="player_rlt_buffering_dot_6_margin_top">63dp</dimen>
+  <!-- buffering dot 7 margins -->
+  <dimen name="player_rlt_buffering_dot_7_margin_left">37.5dp</dimen>
+  <dimen name="player_rlt_buffering_dot_7_margin_top">75dp</dimen>
+  <!-- buffering dot 8 margins -->
+  <dimen name="player_rlt_buffering_dot_8_margin_left">12dp</dimen>
+  <dimen name="player_rlt_buffering_dot_8_margin_top">63dp</dimen>
+
+</resources>

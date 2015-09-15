@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".LoginActivity"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/login_iv_background"
+        android:adjustViewBounds="true"
+        android:src="@drawable/login_background"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/login_iv_background_desc" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/login_llt_content_width"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:baselineAligned="true"
+        android:background="@color/translucent_white"
+        android:id="@+id/login_llt_content"
+        android:gravity="left|top"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:measureWithLargestChild="false"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_iv_logo"
+            android:src="@drawable/bitcodin_small"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/login_iv_logo_desc" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/login_et_username"
+            android:hint="@string/login_et_username_hint"
+            android:typeface="sans"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/login_et_password"
+            android:hint="@string/login_et_password_hint"
+            android:textStyle="normal"
+            android:typeface="sans"
+            android:linksClickable="false"
+            android:longClickable="false"
+            android:password="false"
+            android:singleLine="false"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_cb_stay_logged_in_text"
+            android:id="@+id/login_cb_stay_logged_in"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_bt_login_text"
+            android:id="@+id/login_bt_login"
+            android:singleLine="false"/>
+    </LinearLayout>
+
+</RelativeLayout>

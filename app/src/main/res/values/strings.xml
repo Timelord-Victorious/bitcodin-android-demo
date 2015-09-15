@@ -1,0 +1,32 @@
+<resources>
+
+  <!-- app strings -->
+  <string name="app_name">bitcodin</string>
+  <string name="player_activity_label">bitcodin player</string>
+
+  <!-- login activity strings -->
+  <string name="login_iv_background_desc">background image taken from bitcodin.com</string>
+  <string name="login_iv_logo_desc">bitcodin logo</string>
+  <string name="login_et_username_hint">bitcodin username</string>
+  <string name="login_et_password_hint">bitcodin password</string>
+  <string name="login_cb_stay_logged_in_text">stay logged in</string>
+  <string name="login_bt_login_text">login to bitcodin</string>
+
+  <!-- player activity strings -->
+  <string name="player_iv_control_play_pause_desc">play/pause button</string>
+  <string name="player_tv_control_playback_time_text">00:00:00 / 00:00:00</string>
+  <string name="player_iv_control_change_scaling_desc">changes the scaling of the video</string>
+  <string name="player_tv_tooltip_text_text">00:00:00</string>
+  <string name="player_ib_pager_prev_desc">switches to the previous page</string>
+  <string name="player_et_pager_current_text">1</string>
+  <string name="player_tv_pager_total_text">/ 1</string>
+  <string name="player_ib_pager_next_desc">switches to the next page</string>
+  <string name="player_ib_settings_desc">opens the settings view</string>
+  <string name="player_ib_logout_desc">logout</string>
+  <string name="player_tv_sidebar_loading_text">loading jobs…</string>
+  <string name="player_tv_no_jobs_text">You currently don\'t have any finished jobs.</string>
+  <string name="player_tv_widevine_uri_text">default WideVine license server URL</string>
+  <string name="player_iv_show_sidebar_desc">shows/hides the sidebar</string>
+  <string name="player_iv_bitcodin_logo_desc">bitcodin logo</string>
+
+</resources>
