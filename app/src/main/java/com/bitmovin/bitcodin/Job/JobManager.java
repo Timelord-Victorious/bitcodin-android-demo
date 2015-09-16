@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bitmovin.bitcodin.R;
+import com.bitmovin.bitcodin.Settings;
 import com.bitmovin.bitcodin.Thumbnail.ThumbnailManager;
 import com.bitmovin.bitcodin.api.BitcodinApi;
 
@@ -116,13 +117,14 @@ public class JobManager implements JobLoaderListener {
     jobIdTV.setText("" + job.getId());
     jobInputfileTV.setText("" + job.getInputFilename());
 
-    for (final BitcodinJob.Source mSource : job.getSources()) {
-      if (mSource.getType() != BitcodinJob.Source.Type.OTHER) {
-        sourceWrapper.addView(createSourceView(job, mSource, sourceWrapper));
+    if (!Settings.DASH_ONLY) {
+      for (final BitcodinJob.Source mSource : job.getSources()) {
+        if (mSource.getType() != BitcodinJob.Source.Type.OTHER) {
+          sourceWrapper.addView(createSourceView(job, mSource, sourceWrapper));
+        }
       }
     }
-
-    jobWrapper.setOnClickListener(new OnJobItemClickListener());
+    jobWrapper.setOnClickListener(new OnJobItemClickListener(job, this.listeners));
 
     return jobWrapper;
   }

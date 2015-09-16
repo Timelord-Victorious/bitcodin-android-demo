@@ -1,5 +1,6 @@
 package com.bitmovin.bitcodin.Job;
 
+import com.bitmovin.bitcodin.Settings;
 import com.bitmovin.bitcodin.Thumbnail.ThumbnailLoader;
 import com.bitmovin.bitcodin.Thumbnail.ThumbnailManager;
 import com.bitmovin.bitcodin.api.BitcodinApi;
@@ -66,7 +67,10 @@ public class JobLoader {
       while (mLoader.hasNext()) {
         JobDetails mJob = mLoader.getNext();
         if (mJob.status == JobStatus.FINISHED) {
-          this.mBitcodinJobs.add(new BitcodinJob(mJob, this.mThumbnailLoader));
+          if (!Settings.DASH_ONLY ||
+              (mJob.manifestUrls.mpdUrl != null && !mJob.manifestUrls.mpdUrl.equals(""))) {
+            this.mBitcodinJobs.add(new BitcodinJob(mJob, this.mThumbnailLoader));
+          }
         }
         jobIdx++;
         this.mJobLoaderCallback.onProgressChanged((double) jobIdx / (double) mLoader.getNumJobsPerPage());

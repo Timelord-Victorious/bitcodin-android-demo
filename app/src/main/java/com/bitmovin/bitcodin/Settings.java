@@ -18,6 +18,7 @@ public final class Settings {
   public static String THUMBNAIL_CACHE;
   public static String JOB_CACHE;
   public static boolean INITIALIZED = false;
+  public static final boolean DASH_ONLY = true;
   public static long FADE_OUT_TIMEOUT = 3500;
   public static long FADE_IN_DURATION = 250;
   public static long FADE_OUT_DURATION = 1000;

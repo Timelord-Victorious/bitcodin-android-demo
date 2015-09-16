@@ -11,6 +11,7 @@
   <string name="login_et_password_hint">bitcodin password</string>
   <string name="login_cb_stay_logged_in_text">stay logged in</string>
   <string name="login_bt_login_text">login to bitcodin</string>
+  <string name="login_tv_try_bitcodin_text">TRY FOR FREE at <b>www.bitcodin.com</b></string>
 
   <!-- player activity strings -->
   <string name="player_iv_control_play_pause_desc">play/pause button</string>

@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.bitmovin.network.http.JSONRestClient;
 import com.bitmovin.network.http.RequestMethod;
@@ -35,6 +36,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Com
   private EditText bitcodinPasswordET;
   private CheckBox stayLoggedInCB;
   private Button loginBT;
+  private TextView bitcodinHomepage;
 
   private ErrorPopup mErrorPopup;
   private Intent playerIntent;
@@ -109,7 +111,9 @@ public class LoginActivity extends Activity implements View.OnClickListener, Com
         startActivity(this.playerIntent);
       } catch (Exception ex) {
         if (ex instanceof RestException && ((RestException) ex).status == 401) {
-          this.mErrorPopup.show("username or password incorrect");
+          this.mErrorPopup.show("We do not recognize your username/password combination. " +
+              "If you don't have an account yet, please sign up for free at<br />" +
+              "<font color='#B32E3C'>www.bitcodin.com</font>", true);
         } else if (ex instanceof UnknownHostException) {
           this.mErrorPopup.show("could not connect to login server, check your network connection");
         } else {

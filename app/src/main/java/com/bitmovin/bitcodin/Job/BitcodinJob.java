@@ -121,10 +121,32 @@ public class BitcodinJob implements ThumbnailLoaderListener {
   }
 
   public Source getSource() {
-    return getSource(0);
+    return getSourceAt(0);
   }
 
-  public Source getSource(int index) {
+  public boolean hasSource(int type) {
+    if (this.sources == null || this.sources.size() == 0) {
+      return false;
+    } else {
+      for (Source src : this.sources) {
+        if (src.getType() == type) {
+          return true;
+        }
+      }
+      return false;
+    }
+  }
+
+  public Source getSource(int type) {
+    for (Source src : this.sources) {
+      if (src.getType() == type) {
+        return src;
+      }
+    }
+    return null;
+  }
+
+  public Source getSourceAt(int index) {
     if (this.sources == null) return null;
     if (index >= this.sources.size()) return null;
     else return this.sources.get(index);

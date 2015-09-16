@@ -17,63 +17,83 @@
         android:orientation="vertical"
         android:layout_width="@dimen/login_llt_content_width"
         android:layout_height="wrap_content"
-        android:padding="5dp"
         android:baselineAligned="true"
-        android:background="@color/translucent_white"
-        android:id="@+id/login_llt_content"
+        android:background="@color/transparent"
+        android:id="@+id/login_llt_content_wrapper"
         android:gravity="left|top"
         android:layout_alignParentEnd="false"
         android:layout_alignParentStart="false"
         android:measureWithLargestChild="false"
         android:layout_centerInParent="true">
 
-        <ImageView
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/login_iv_logo"
-            android:src="@drawable/bitcodin_small"
-            android:scaleType="fitStart"
-            android:adjustViewBounds="true"
-            android:contentDescription="@string/login_iv_logo_desc" />
+            android:id="@+id/login_llt_content"
+            android:background="@color/translucent_white"
+            android:padding="5dp">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:ems="10"
-            android:id="@+id/login_et_username"
-            android:hint="@string/login_et_username_hint"
-            android:typeface="sans"
-            android:textStyle="normal"
-            android:fontFamily="sans-serif" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_iv_logo"
+                android:src="@drawable/bitcodin_small"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/login_iv_logo_desc" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:id="@+id/login_et_password"
-            android:hint="@string/login_et_password_hint"
-            android:textStyle="normal"
-            android:typeface="sans"
-            android:linksClickable="false"
-            android:longClickable="false"
-            android:password="false"
-            android:singleLine="false"
-            android:inputType="textPassword"
-            android:fontFamily="sans-serif" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/login_et_username"
+                android:hint="@string/login_et_username_hint"
+                android:typeface="sans"
+                android:textStyle="normal"
+                android:fontFamily="sans-serif" />
 
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login_cb_stay_logged_in_text"
-            android:id="@+id/login_cb_stay_logged_in"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/login_et_password"
+                android:hint="@string/login_et_password_hint"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:password="false"
+                android:singleLine="false"
+                android:inputType="textPassword"
+                android:fontFamily="sans-serif" />
 
-        <Button
-            android:layout_width="match_parent"
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_cb_stay_logged_in_text"
+                android:id="@+id/login_cb_stay_logged_in"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_bt_login_text"
+                android:id="@+id/login_bt_login"
+                android:singleLine="false"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/login_llt_content_width"
             android:layout_height="wrap_content"
-            android:text="@string/login_bt_login_text"
-            android:id="@+id/login_bt_login"
-            android:singleLine="false"/>
+            android:text="@string/login_tv_try_bitcodin_text"
+            android:id="@+id/login_tv_try_bitcodin"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:autoLink="web"
+            android:layout_marginTop="10dp"/>
     </LinearLayout>
 
 </RelativeLayout>

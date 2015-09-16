@@ -2,6 +2,7 @@ package com.bitmovin.bitcodin;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -9,6 +10,7 @@ import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.Window;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
@@ -37,6 +39,7 @@ public class PlayerActivity extends Activity implements SurfaceHolder.Callback, 
   private BufferingOverlay bufferingOverlay;
   private ControlOverlay mControlOverlay;
   private SidebarOverlay mSidebarOverlay;
+  private ImageView logo;
   private boolean lastStateBuffering = false;
   public static final int TYPE_DASH = 0;
   public static final int TYPE_HLS = 2;
@@ -98,10 +101,20 @@ public class PlayerActivity extends Activity implements SurfaceHolder.Callback, 
         this.mJobManager
     );
 
-    this.mControlOverlay.setTitle("Red Bull");
+    this.mControlOverlay.setTitle("Art of Motion");
     this.mSidebarOverlay.addListener(this);
 
     this.mErrorPopup = new ErrorPopup(this);
+
+    this.logo = (ImageView) findViewById(R.id.player_iv_bitcodin_logo);
+    this.logo.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        Intent viewHomepageIntent = new Intent(Intent.ACTION_VIEW);
+        viewHomepageIntent.setData(Uri.parse("http://www.bitcodin.com"));
+        startActivity(viewHomepageIntent);
+      }
+    });
 
     findViewById(R.id.player_llt_click_listener).setOnTouchListener(this.mOnTouchListener);
     findViewById(R.id.player_rlt_overlay_wrapper).setOnTouchListener(this.mOnTouchListener);

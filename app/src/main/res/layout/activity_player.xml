@@ -205,7 +205,7 @@
 
                     <LinearLayout
                         android:orientation="horizontal"
-                        android:layout_width="@dimen/player_llt_pager_container_width"
+                        android:layout_width="wrap_content"
                         android:layout_height="@dimen/player_llt_pager_container_height"
                         android:gravity="center_vertical|center_horizontal"
                         android:layout_gravity="center"
@@ -213,7 +213,7 @@
 
                         <EditText
                             tools:ignore="LabelFor,SpUsage"
-                            android:layout_width="@dimen/player_pager_current_total_width"
+                            android:layout_width="wrap_content"
                             android:layout_height="@dimen/player_pager_current_total_height"
                             android:id="@+id/player_et_pager_current"
                             android:spinnerMode="dropdown"
@@ -233,14 +233,15 @@
 
                         <TextView
                             tools:ignore="SpUsage"
-                            android:layout_width="@dimen/player_pager_current_total_width"
+                            android:layout_width="wrap_content"
                             android:layout_height="@dimen/player_pager_current_total_height"
                             android:text="@string/player_tv_pager_total_text"
                             android:id="@+id/player_tv_pager_total"
                             android:textSize="@dimen/large_font_size"
                             android:gravity="center_vertical|left"
                             android:textColor="@color/white"
-                            android:textIsSelectable="false" />
+                            android:textIsSelectable="false"
+                            android:layout_marginRight="7dp"/>
 
 
                     </LinearLayout>
@@ -265,24 +266,25 @@
                     android:layout_width="@dimen/player_ib_settings_width"
                     android:layout_height="@dimen/player_ib_settings_height"
                     android:id="@+id/player_ib_settings"
-                    android:src="@android:drawable/ic_menu_preferences"
+                    android:src="@drawable/settings"
                     android:layout_margin="@dimen/player_ib_settings_margin"
                     android:background="@drawable/item_selector"
-                    android:contentDescription="@string/player_ib_settings_desc" />
+                    android:contentDescription="@string/player_ib_settings_desc"
+                    android:padding="@dimen/player_ib_pager_padding"
+                    android:scaleType="fitCenter"/>
 
                 <ImageButton
-                    android:layout_width="@dimen/player_ib_pager_width"
-                    android:layout_height="@dimen/player_ib_pager_height"
+                    android:layout_width="@dimen/player_ib_settings_width"
+                    android:layout_height="@dimen/player_ib_settings_height"
                     android:id="@+id/player_ib_logout"
-                    android:layout_marginTop="@dimen/player_ib_pager_margin_top"
-                    android:layout_marginBottom="@dimen/player_ib_pager_margin_bottom"
                     android:src="@drawable/logout"
                     android:scaleType="fitCenter"
                     android:background="@drawable/item_selector"
                     android:padding="@dimen/player_ib_pager_padding"
                     android:focusable="false"
                     android:contentDescription="@string/player_ib_logout_desc"
-                    android:longClickable="false"/>
+                    android:longClickable="false"
+                    android:layout_margin="@dimen/player_ib_settings_margin"/>
             </LinearLayout>
 
             <LinearLayout
