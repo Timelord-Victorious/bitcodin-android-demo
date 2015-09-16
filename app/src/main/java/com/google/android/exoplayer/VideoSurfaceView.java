@@ -68,6 +68,7 @@ public class VideoSurfaceView extends SurfaceView {
     super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     int width = getMeasuredWidth();
     int height = getMeasuredHeight();
+    float screenAspectRatio = (float)width / (float)height;
     switch (this.scalingMode) {
       case ScalingMode.FIT:
         if (videoAspectRatio != 0) {
@@ -82,8 +83,8 @@ public class VideoSurfaceView extends SurfaceView {
         break;
 
       case ScalingMode.CROP:
-        /* fill the entire screen */
-        if (this.videoAspectRatio > 1) {
+        /* fill the entire screen without stretching the video */
+        if (this.videoAspectRatio > 1 && !(screenAspectRatio > this.videoAspectRatio)) {
           width = (int)((float)height * videoAspectRatio);
         } else {
           height = (int)((float)width / videoAspectRatio);

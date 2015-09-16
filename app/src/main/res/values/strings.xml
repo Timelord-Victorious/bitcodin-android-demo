@@ -26,7 +26,7 @@
   <string name="player_ib_logout_desc">logout</string>
   <string name="player_tv_sidebar_loading_text">loading jobs…</string>
   <string name="player_tv_no_jobs_text">You currently don\'t have any finished jobs.</string>
-  <string name="player_tv_widevine_uri_text">default WideVine license server URL</string>
+  <string name="player_tv_widevine_uri_text">default Widevine license server URL</string>
   <string name="player_iv_show_sidebar_desc">shows/hides the sidebar</string>
   <string name="player_iv_bitcodin_logo_desc">bitcodin logo</string>
 

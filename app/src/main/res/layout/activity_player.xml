@@ -428,11 +428,12 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/player_iv_bitcodin_logo_desc"
         android:clickable="true"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentEnd="false"
         android:layout_alignParentStart="false"
         android:baselineAlignBottom="true"
         android:layout_marginTop="@dimen/player_iv_bitcodin_logo_margin_top"
-        android:layout_marginRight="@dimen/player_iv_bitcodin_logo_margin_right" />
+        android:layout_marginRight="@dimen/player_iv_bitcodin_logo_margin_right"
+        android:layout_alignParentRight="true"/>
 
     <RelativeLayout
         tools:ignore="RtlHardcoded"
